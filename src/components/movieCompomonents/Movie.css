@@ -1,7 +1,14 @@
 .movie_box{
+    display: flex;
     border: 1px solid rgb(30, 0, 255);
     border-radius: 5px;
     margin: 25px 10px;
     box-shadow: 2px 2px 10px gray;
     padding: 2px;
+}
+
+.movie_box img{
+    height: 300px;
+    width: 250px;
+    margin-right: 50px;
 }
