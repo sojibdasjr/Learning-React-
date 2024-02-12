@@ -1,8 +1,7 @@
 /* eslint-disable react/prop-types */
 import './Book.css'
-const Book = ({book}) => {
-    console.log(book);
-    const {name, price}= book
+const Book = ({book_props}) => {
+    const {name, price}= book_props
     
     return (
         <div className="book">
