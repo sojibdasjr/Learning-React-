@@ -4,6 +4,7 @@ import Condition from "./components/Condition";
 import Header from "./components/Header";
 import Singer from "./components/Singer";
 import TernaryOperator from "./components/TernaryOperator";
+import BookStore from "./components/booksStore/BookStore";
 function App() {
   const actors = [
     "Shakib Khan",
@@ -35,9 +36,12 @@ function App() {
       {/* Actors Component Start */}
       {actors.map((actorName) => (
         <Actors actor={actorName} key={actorName.id}></Actors>
-      ))}  {/* Actors Component End */}
-
-      {singers.map(singerdetelise=> <Singer singer={singerdetelise} key={singerdetelise.id}></Singer>)}
+      ))}{" "}
+      {/* Actors Component End */}
+      {singers.map((singerdetelise) => (
+        <Singer singer={singerdetelise} key={singerdetelise.id}></Singer>
+      ))}
+      <BookStore></BookStore>
     </>
   );
 }
