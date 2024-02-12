@@ -20,7 +20,16 @@ function App() {
     { id: 3, name: "Shuvro Dev", age: 63 },
     { id: 4, name: "Pritom", age: 26 },
     { id: 5, name: "Asif Akber", age: 45 },
-    { id: 6, name: "Eva Rahman", age: 37 },
+    { id: 6, name: "Eva Rahman", age: 37 }
+  ];
+
+  const books = [
+    { id: 1, name: "Physics", price: 65 },
+    { id: 2, name: "Math", price: 55 },
+    { id: 3, name: "Shuvro Dev", price: 63 },
+    { id: 4, name: "Pritom", price: 26 },
+    { id: 5, name: "Asif Akber", price: 45 },
+    { id: 6, name: "Eva Rahman", price: 37 }
   ];
 
   return (
@@ -41,7 +50,7 @@ function App() {
       {singers.map((singerdetelise) => (
         <Singer singer={singerdetelise} key={singerdetelise.id}></Singer>
       ))}
-      <BookStore></BookStore>
+      <BookStore book_data={books}></BookStore>
     </>
   );
 }
